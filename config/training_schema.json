@@ -1,0 +1,31 @@
+{
+    "SampleFileName": "thyroid_data.csv",
+    "LengthOfDateStampInFile": null,
+    "LengthOfTimeStampInFile": null,
+    "NumberofColumns": 22,
+    "ColName": {
+      "v1": "INTEGER",
+      "v2": "INTEGER",
+      "v3": "INTEGER",
+      "v4": "INTEGER",
+      "v5": "INTEGER",
+      "v6": "INTEGER",
+      "v7": "INTEGER",
+      "v8": "INTEGER",
+      "v9": "INTEGER",
+      "v10": "INTEGER",
+      "v11": "INTEGER",
+      "v12": "INTEGER",
+      "v13": "INTEGER",
+      "v14": "INTEGER",
+      "v15": "FLOAT",
+      "v16": "FLOAT",
+      "v17": "FLOAT",
+      "v18": "FLOAT",
+      "v19": "FLOAT",
+      "v20": "FLOAT",
+      "v21": "INTEGER",
+      "Class": "INTEGER"
+    }
+  }
+  

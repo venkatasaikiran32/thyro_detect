@@ -1,0 +1,51 @@
+2024-08-26 19:29:55,940 - 225 - werkzeug - WARNING -  * Debugger is active!
+2024-08-26 19:29:55,996 - 225 - werkzeug - INFO -  * Debugger PIN: 525-192-228
+2024-08-26 19:29:59,686 - 225 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-08-26 19:29:59,687 - 225 - werkzeug - INFO -  * Running on http://192.168.1.102:5000/ (Press CTRL+C to quit)
+2024-08-26 19:29:59,801 - 70 - root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+2024-08-26 19:29:59,801 - 39 - root - INFO - Exporting data from mongodb
+2024-08-26 19:30:01,854 - 24 - root - INFO - Entered the data access method
+2024-08-26 19:30:05,452 - 46 - root - INFO - Saving exported data into feature store file path: artifacts\08_26_2024_19_29_53\data_ingestion
+2024-08-26 19:30:05,453 - 74 - root - INFO - Exporting collections as DataFrames
+2024-08-26 19:30:05,453 - 36 - root - INFO - Fetching collection names from the database
+2024-08-26 19:30:46,562 - 38 - root - INFO - Collection names: ['thyroid_ann']
+2024-08-26 19:30:46,563 - 48 - root - INFO - Fetching data from collection: thyroid_ann
+2024-08-26 19:31:08,939 - 64 - root - INFO - Data fetch from collection: thyroid_ann completed
+2024-08-26 19:31:08,947 - 48 - root - INFO - Shape of thyroid_ann: (3772, 22)
+2024-08-26 19:31:09,034 - 53 - root - INFO - data uploaded in the corresponding file locationartifacts\08_26_2024_19_29_53\data_ingestion\thyroid_ann.csv
+2024-08-26 19:31:09,034 - 75 - root - INFO - Got the data from mongodb
+2024-08-26 19:31:09,035 - 77 - root - INFO - Exited initiate_data_ingestion method of Data_Ingestion class
+2024-08-26 19:31:09,035 - 24 - root - INFO - Entered into DataValidation class
+2024-08-26 19:31:09,035 - 28 - root - INFO - Exited from DataValidation class
+2024-08-26 19:31:09,035 - 125 - root - INFO - Entered initiate_data_validation method of Data_Validation class
+2024-08-26 19:31:09,035 - 98 - root - INFO - Entered into validate_raw_files
+2024-08-26 19:31:09,035 - 79 - root - INFO - Entered into get_raw_batch_files_paths
+2024-08-26 19:31:09,036 - 32 - root - INFO - Entered into valuesFromSchema
+2024-08-26 19:31:09,037 - 46 - root - INFO - Entered into validate_file_name
+2024-08-26 19:31:09,037 - 57 - root - INFO - Entered into validate_no_of_columns
+2024-08-26 19:31:09,085 - 66 - root - INFO - Entered into validate_missing_values_in_whole_column
+2024-08-26 19:31:09,107 - 108 - root - INFO - File: artifacts\08_26_2024_19_29_53\data_ingestion\thyroid_ann.csv - Name Validation: True, Column Count Validation: True, Missing Value Validation: True
+2024-08-26 19:31:09,108 - 89 - root - INFO - Entered into move_raw_files_to_validation_dir
+2024-08-26 19:31:09,136 - 106 - root - INFO - Unwanted spaces removal Successful.Exited the remove_unwanted_spaces method of the Preprocessor class
+2024-08-26 19:31:10,130 - 135 - root - INFO - Obtaining preprocessing object
+2024-08-26 19:31:10,166 - 103 - root - INFO - Categorical columns: ['v2', 'v3', 'v4', 'v5', 'v6', 'v7', 'v8', 'v9', 'v10', 'v11', 'v12', 'v13', 'v14', 'v15', 'v16']
+2024-08-26 19:31:10,166 - 104 - root - INFO - Numerical discrete  columns: []
+2024-08-26 19:31:10,166 - 105 - root - INFO - Numerical continuous columns: ['v1', 'v17', 'v18', 'v19', 'v20', 'v21']
+2024-08-26 19:31:10,178 - 144 - root - INFO - Applying preprocessing object on training and testing dataframes.
+2024-08-26 19:31:10,273 - 151 - root - INFO - Saving preprocessing object.
+2024-08-26 19:31:10,274 - 41 - root - INFO - Entered the save_object method of MainUtils class
+2024-08-26 19:31:10,277 - 47 - root - INFO - Exited the save_object method of MainUtils class
+2024-08-26 19:31:10,278 - 157 - root - INFO - Storing test and train data
+2024-08-26 19:31:11,023 - 188 - root - INFO - Splitting training and testing input and target feature
+2024-08-26 19:31:11,023 - 190 - root - INFO - Extracting model config file path
+2024-08-26 19:31:11,024 - 56 - root - INFO - Entered the load_object method of MainUtils class
+2024-08-26 19:31:11,041 - 62 - root - INFO - Exited the load_object method of MainUtils class
+2024-08-26 19:31:11,041 - 194 - root - INFO - Extracting model config file path
+2024-08-26 19:37:11,585 - 229 - root - INFO - Best found model on both training and testing dataset
+2024-08-26 19:37:11,585 - 236 - root - INFO - Saving model at path: artifacts\08_26_2024_19_29_53\model_trainer\trained_model\model.pkl
+2024-08-26 19:37:11,587 - 41 - root - INFO - Entered the save_object method of MainUtils class
+2024-08-26 19:37:11,597 - 47 - root - INFO - Exited the save_object method of MainUtils class
+2024-08-26 19:37:11,880 - 1254 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-08-26 19:37:36,357 - 225 - werkzeug - INFO - 127.0.0.1 - - [26/Aug/2024 19:37:36] "GET /train HTTP/1.1" 200 -
+2024-08-26 19:37:36,534 - 225 - werkzeug - INFO - 127.0.0.1 - - [26/Aug/2024 19:37:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
